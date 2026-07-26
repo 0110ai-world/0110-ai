@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>0110 World</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#000;
+color:white;
+font-family:Arial,Helvetica,sans-serif;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+overflow:hidden;
+}
+
+h1{
+font-size:72px;
+letter-spacing:12px;
+animation:glow 2s infinite alternate;
+}
+
+p{
+margin-top:20px;
+font-size:22px;
+color:#aaa;
+letter-spacing:3px;
+}
+
+.circle{
+position:absolute;
+width:300px;
+height:300px;
+border:2px solid #00ffff;
+border-radius:50%;
+animation:spin 15s linear infinite;
+opacity:.25;
+}
+
+.circle2{
+position:absolute;
+width:500px;
+height:500px;
+border:1px solid #0066ff;
+border-radius:50%;
+animation:spinReverse 25s linear infinite;
+opacity:.15;
+}
+
+@keyframes glow{
+from{
+text-shadow:0 0 10px #00aaff;
+}
+to{
+text-shadow:0 0 35px #00ffff;
+}
+}
+
+@keyframes spin{
+from{
+transform:rotate(0deg);
+}
+to{
+transform:rotate(360deg);
+}
+}
+
+@keyframes spinReverse{
+from{
+transform:rotate(360deg);
+}
+to{
+transform:rotate(0deg);
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle2"></div>
+
+<h1>0110</h1>
+
+<p>Welcome to 0110 World</p>
+
+</body>
+</html>
